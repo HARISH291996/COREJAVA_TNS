@@ -13,4 +13,3 @@ obj.harish();
 obj.a();
 }  
 }  
-
