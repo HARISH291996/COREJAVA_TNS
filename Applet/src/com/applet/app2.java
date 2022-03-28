@@ -25,7 +25,7 @@ public class app2 extends Applet
 		{
 			String s1 = t1.getText();
 			int i = Integer.parseInt(s1);
-			String s2 = t1.getText();
+			String s2 = t2.getText();
 			int j = Integer.parseInt(s2);
 			int k = i+j;
 			String s3 = String.valueOf(k);
